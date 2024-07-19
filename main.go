@@ -1,8 +1,10 @@
 package main // si el archivo no se encuentra en una carpeta, el package es main
 
-import ( 
+import (
 	//"fmt" // importa el paquete fmt
-	"github.com/Lelo88/dodesde0/variables"// importa el paquete github.com/desde0/desde0
+	"fmt"
+
+	"github.com/Lelo88/dodesde0/variables" // importa el paquete github.com/desde0/desde0
 )
 
 func main() { // funcion principal
@@ -11,5 +13,8 @@ func main() { // funcion principal
 	variables.MostrarEnteros()
 
 	variables.RestoVariables()
+
+	estado, texto := variables.ConviertoATexto(2)
+	fmt.Println("Estado: ", estado, " Texto: ", texto)
 }
 
