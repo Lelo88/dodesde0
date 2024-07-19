@@ -9,5 +9,7 @@ func main() { // funcion principal
 	// fmt.Println("Hola mundo")
 
 	variables.MostrarEnteros()
+
+	variables.RestoVariables()
 }
 
