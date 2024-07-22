@@ -1,6 +1,8 @@
 package variables
 
-func ConviertoATexto(numero int) (bool, rune) {
-	texto := rune(numero)
+import "strconv"
+
+func ConviertoATexto(numero int) (bool, string) {
+	texto := strconv.Itoa(numero)
 	return true, texto
 }

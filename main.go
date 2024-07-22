@@ -16,5 +16,10 @@ func main() { // funcion principal
 
 	estado, texto := variables.ConviertoATexto(2)
 	fmt.Println("Estado: ", estado, " Texto: ", texto)
+
+	estado, convertido := variables.ConviertoATexto(3)
+	fmt.Println("Convertido: ", convertido)
+
+	fmt.Println("Estado: ", estado)
 }
 
