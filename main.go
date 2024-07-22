@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	"github.com/Lelo88/dodesde0/condicionales"
+	"github.com/Lelo88/dodesde0/ejercicios"
 	"github.com/Lelo88/dodesde0/variables" // importa el paquete github.com/desde0/desde0
 )
 
@@ -27,5 +28,8 @@ func main() { // funcion principal
 	condicionales.FuncionamientoCondicional()
 
 	condicionales.FuncionamientoSwitch()
+
+	mensaje, numero := ejercicios.ConvierteAEntero("200")
+	fmt.Println("El mensaje es: ", mensaje, " El numero es: ", numero)
 }
 
