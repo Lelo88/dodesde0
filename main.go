@@ -4,6 +4,7 @@ import (
 	//"fmt" // importa el paquete fmt
 	"fmt"
 
+	"github.com/Lelo88/dodesde0/condicionales"
 	"github.com/Lelo88/dodesde0/variables" // importa el paquete github.com/desde0/desde0
 )
 
@@ -21,5 +22,10 @@ func main() { // funcion principal
 	fmt.Println("Convertido: ", convertido)
 
 	fmt.Println("Estado: ", estado)
+
+
+	condicionales.FuncionamientoCondicional()
+
+	condicionales.FuncionamientoSwitch()
 }
 
