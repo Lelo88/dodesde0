@@ -52,6 +52,8 @@ func main() { // funcion principal
 
 	// funciones.Calculo()
 
-	funciones.LlamarClosure()
+	//funciones.LlamarClosure()
+
+	funciones.Exponencia(12)
 }
 
