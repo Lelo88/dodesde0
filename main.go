@@ -5,7 +5,8 @@ import (
 	// "fmt"
 
 	//"github.com/Lelo88/dodesde0/condicionales"
-	"github.com/Lelo88/dodesde0/archivos"
+	//"github.com/Lelo88/dodesde0/archivos"
+	"github.com/Lelo88/dodesde0/funciones"
 	//"github.com/Lelo88/dodesde0/ejercicios"
 	//"github.com/Lelo88/dodesde0/iteraciones"
 	//"github.com/Lelo88/dodesde0/teclado"
@@ -47,6 +48,10 @@ func main() { // funcion principal
 
 	//archivos.SumaTabla()
 
-	archivos.LeoArchivo()
+	//archivos.LeoArchivo()
+
+	// funciones.Calculo()
+
+	funciones.LlamarClosure()
 }
 
