@@ -5,7 +5,8 @@ import (
 	// "fmt"
 
 	//"github.com/Lelo88/dodesde0/condicionales"
-	"github.com/Lelo88/dodesde0/ejercicios"
+	"github.com/Lelo88/dodesde0/archivos"
+	//"github.com/Lelo88/dodesde0/ejercicios"
 	//"github.com/Lelo88/dodesde0/iteraciones"
 	//"github.com/Lelo88/dodesde0/teclado"
 	//"github.com/Lelo88/dodesde0/variables" // importa el paquete github.com/desde0/desde0
@@ -40,6 +41,12 @@ func main() { // funcion principal
 
 	// paquete iteraciones
 
-	ejercicios.TablaDeMultiplicar()
+	// ejercicios.TablaDeMultiplicar()
+
+	//archivos.GrabaTabla()
+
+	//archivos.SumaTabla()
+
+	archivos.LeoArchivo()
 }
 

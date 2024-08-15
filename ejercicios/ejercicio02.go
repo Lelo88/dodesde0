@@ -8,11 +8,13 @@ import (
 )
 
 
-
-func TablaDeMultiplicar() {
+// TablaDeMultiplicar devuelve el texto de la tabla de multiplicar
+func TablaDeMultiplicar() string {
+	scanner := bufio.NewScanner(os.Stdin)
+	
 	var numero int
 	var err error
-	scanner := bufio.NewScanner(os.Stdin)
+	var texto string // se lo agregamos para la explicación de la teoría de archivos
 
 	for {
 		fmt.Println("Ingrese el numero para la tabla de multiplicar: ")
@@ -27,6 +29,8 @@ func TablaDeMultiplicar() {
 	}
 
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d\n", i, numero, i*numero)
+		texto = texto +  fmt.Sprintf("%d x %d = %d\n", i, numero, i*numero)
 	} 
+
+	return texto
 }
