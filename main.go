@@ -1,18 +1,18 @@
 package main // si el archivo no se encuentra en una carpeta, el package es main
 
-import (
-	//"fmt" // importa el paquete fmt
-	// "fmt"
+import "github.com/Lelo88/dodesde0/mapas"
 
-	//"github.com/Lelo88/dodesde0/condicionales"
-	//"github.com/Lelo88/dodesde0/archivos"
-	"github.com/Lelo88/dodesde0/arreglos_slices"
-	//"github.com/Lelo88/dodesde0/funciones"
-	//"github.com/Lelo88/dodesde0/ejercicios"
-	//"github.com/Lelo88/dodesde0/iteraciones"
-	//"github.com/Lelo88/dodesde0/teclado"
-	//"github.com/Lelo88/dodesde0/variables" // importa el paquete github.com/desde0/desde0
-)
+//"fmt" // importa el paquete fmt
+// "fmt"
+
+//"github.com/Lelo88/dodesde0/condicionales"
+//"github.com/Lelo88/dodesde0/archivos"
+//"github.com/Lelo88/dodesde0/arreglos_slices"
+//"github.com/Lelo88/dodesde0/funciones"
+//"github.com/Lelo88/dodesde0/ejercicios"
+//"github.com/Lelo88/dodesde0/iteraciones"
+//"github.com/Lelo88/dodesde0/teclado"
+//"github.com/Lelo88/dodesde0/variables" // importa el paquete github.com/desde0/desde0
 
 func main() { // funcion principal
 /* 	// fmt.Println("Hola mundo")
@@ -57,6 +57,6 @@ func main() { // funcion principal
 
 	//funciones.Exponencia(12)
 
-	arreglos_slices.Capacidad()
+	mapas.MuestroMapas()
 }
 
