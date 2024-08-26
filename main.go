@@ -3,8 +3,9 @@ package main // si el archivo no se encuentra en una carpeta, el package es main
 import (
 	// "github.com/Lelo88/dodesde0/mapas"
 	// "github.com/Lelo88/dodesde0/users"
-	interfaces "github.com/Lelo88/dodesde0/ejer_interfaces"
-	"github.com/Lelo88/dodesde0/modelos"
+	"github.com/Lelo88/dodesde0/deferpanic"
+	//interfaces "github.com/Lelo88/dodesde0/ejer_interfaces"
+	//"github.com/Lelo88/dodesde0/modelos"
 )
 
 //"fmt" // importa el paquete fmt
@@ -20,27 +21,27 @@ import (
 //"github.com/Lelo88/dodesde0/variables" // importa el paquete github.com/desde0/desde0
 
 func main() { // funcion principal
-/* 	// fmt.Println("Hola mundo")
+	/* 	// fmt.Println("Hola mundo")
 
-	variables.MostrarEnteros()
+	   	variables.MostrarEnteros()
 
-	variables.RestoVariables()
+	   	variables.RestoVariables()
 
-	estado, texto := variables.ConviertoATexto(2)
-	fmt.Println("Estado: ", estado, " Texto: ", texto)
+	   	estado, texto := variables.ConviertoATexto(2)
+	   	fmt.Println("Estado: ", estado, " Texto: ", texto)
 
-	estado, convertido := variables.ConviertoATexto(3)
-	fmt.Println("Convertido: ", convertido)
+	   	estado, convertido := variables.ConviertoATexto(3)
+	   	fmt.Println("Convertido: ", convertido)
 
-	fmt.Println("Estado: ", estado)
+	   	fmt.Println("Estado: ", estado)
 
 
-	condicionales.FuncionamientoCondicional()
+	   	condicionales.FuncionamientoCondicional()
 
-	condicionales.FuncionamientoSwitch()
+	   	condicionales.FuncionamientoSwitch()
 
-	mensaje, numero := ejercicios.ConvierteAEntero("200")
-	fmt.Println("El mensaje es: ", mensaje, " El numero es: ", numero) */
+	   	mensaje, numero := ejercicios.ConvierteAEntero("200")
+	   	fmt.Println("El mensaje es: ", mensaje, " El numero es: ", numero) */
 
 	// ejecutamos el paquete teclado
 
@@ -66,10 +67,14 @@ func main() { // funcion principal
 
 	//users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
-	interfaces.HumanosRespirando(Pedro)
+	//  Pedro := new(modelos.Hombre)
+	// interfaces.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	interfaces.HumanosRespirando(Maria)
+	// Maria := new(modelos.Mujer)
+	//interfaces.HumanosRespirando(Maria)
+
+	//deferpanic.VemosDefer()
+
+	//deferpanic.EjemploPanic()
+	deferpanic.EjemploRecover()
 }
-
