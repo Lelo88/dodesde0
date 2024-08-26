@@ -2,7 +2,9 @@ package main // si el archivo no se encuentra en una carpeta, el package es main
 
 import (
 	// "github.com/Lelo88/dodesde0/mapas"
-	"github.com/Lelo88/dodesde0/users"
+	// "github.com/Lelo88/dodesde0/users"
+	interfaces "github.com/Lelo88/dodesde0/ejer_interfaces"
+	"github.com/Lelo88/dodesde0/modelos"
 )
 
 //"fmt" // importa el paquete fmt
@@ -62,6 +64,12 @@ func main() { // funcion principal
 
 	// mapas.MuestroMapas()
 
-	users.AltaUsuario()
+	//users.AltaUsuario()
+
+	Pedro := new(modelos.Hombre)
+	interfaces.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	interfaces.HumanosRespirando(Maria)
 }
 
