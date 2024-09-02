@@ -3,7 +3,10 @@ package main // si el archivo no se encuentra en una carpeta, el package es main
 import (
 	// "github.com/Lelo88/dodesde0/mapas"
 	// "github.com/Lelo88/dodesde0/users"
-	"github.com/Lelo88/dodesde0/deferpanic"
+	//"github.com/Lelo88/dodesde0/deferpanic"
+	"fmt"
+
+	"github.com/Lelo88/dodesde0/goroutine"
 	//interfaces "github.com/Lelo88/dodesde0/ejer_interfaces"
 	//"github.com/Lelo88/dodesde0/modelos"
 )
@@ -76,5 +79,13 @@ func main() { // funcion principal
 	//deferpanic.VemosDefer()
 
 	//deferpanic.EjemploPanic()
-	deferpanic.EjemploRecover()
+	//deferpanic.EjemploRecover()
+
+	go goroutine.MiNombreLentooo("Leandro")
+	// llamo a la rutina y se ejecuta por ser asíncrono, por lo que no sabemos si se ejecutó o no
+	// Vamos a crear un pequeño código de ejemplo
+
+	var x string
+	fmt.Scanln(&x) // el programa se detiene hasta que el usuario presione enter u otra tecla
+
 }
