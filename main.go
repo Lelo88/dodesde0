@@ -1,6 +1,9 @@
 package main // si el archivo no se encuentra en una carpeta, el package es main
 
-import "github.com/Lelo88/dodesde0/webserver"
+import (
+	"github.com/Lelo88/dodesde0/middlewares"
+//	"github.com/Lelo88/dodesde0/webserver"
+)
 
 // "github.com/Lelo88/dodesde0/mapas"
 // "github.com/Lelo88/dodesde0/users"
@@ -95,5 +98,7 @@ func main() { // funcion principal
 	// fmt.Scanln(&x) // el programa se detiene hasta que el usuario presione enter u otra tecla
 
 
-	webserver.MiWebServer()
+	//webserver.MiWebServer()
+
+	middlewares.MiMiddleware()
 }
