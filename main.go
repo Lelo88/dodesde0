@@ -4,7 +4,7 @@ import (
 	// "github.com/Lelo88/dodesde0/mapas"
 	// "github.com/Lelo88/dodesde0/users"
 	//"github.com/Lelo88/dodesde0/deferpanic"
-	"fmt"
+	//"fmt"
 
 	"github.com/Lelo88/dodesde0/goroutine"
 	//interfaces "github.com/Lelo88/dodesde0/ejer_interfaces"
@@ -81,11 +81,17 @@ func main() { // funcion principal
 	//deferpanic.EjemploPanic()
 	//deferpanic.EjemploRecover()
 
-	go goroutine.MiNombreLentooo("Leandro")
+	canal1 := make(chan bool)
+
+	go goroutine.MiNombreLentooo("Leandro", canal1)
 	// llamo a la rutina y se ejecuta por ser asíncrono, por lo que no sabemos si se ejecutó o no
 	// Vamos a crear un pequeño código de ejemplo
-
-	var x string
-	fmt.Scanln(&x) // el programa se detiene hasta que el usuario presione enter u otra tecla
+	defer func() {
+		// no va a terminar la ejecución hasta que todos los 
+		<-canal1 // el canal es el que está enviando información. Esto sería un await
+	}()
+	
+	// var x string
+	// fmt.Scanln(&x) // el programa se detiene hasta que el usuario presione enter u otra tecla
 
 }
